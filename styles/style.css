@@ -71,17 +71,6 @@ button:hover {
 
 /* Menu items */
 
-/* 
-Classes used - Hierarchy
-
-
-.content-wrapper
-.item-header
-.item-Title
-.item-price
-.item-description
-*/
-
 .menu-container {
     width: 1200px;
     margin: 0 auto;
@@ -141,6 +130,19 @@ article {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.item-header::after {
+    content: " ";
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 
 .item-title {
