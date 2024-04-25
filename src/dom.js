@@ -1,5 +1,6 @@
-const dom = {
-    parent: document.getElementById('parent'),
-};
+ const dom = {
+    buttonContainer: document.querySelector('.button-container'),
+    menuContainer: document.querySelector('.menu-container')
+ }
 
-export default dom;
+ export default dom;
