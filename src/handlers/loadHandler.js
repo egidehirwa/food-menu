@@ -4,17 +4,17 @@ import createButton from "../components/createButton.js"
 import createItem from "../components/createItem.js"
 
 const loadHandler = () => {
-data.buttons.forEach((btn) => {
-    const button = createButton(btn);
-    dom.buttonContainer.append(button);
+    data.buttons.forEach((btn) => {
+        const button = createButton(btn);
+        dom.buttonContainer.append(button);
 
-})
+    })
 
-data.menu.forEach((item) => {
-    const article = createItem(item);
-    dom.menuContainer.append(article);
-
-})
+    data.menu.forEach((item) => {
+        const article = createItem(item);
+        console.log(item);
+        dom.menuContainer.append(article);
+    })
 }
 
 export default loadHandler;          

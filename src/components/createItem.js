@@ -6,10 +6,11 @@
  */
 
 const createItem = (item) => {
-    
+
     // Create Article
     const article = document.createElement('article');
     article.classList.add('menu-item', item.category);
+    article.style.viewTransitionName = `item-${item.id}`;
 
     // Create Media Wrapper
     const mediaWrapper = document.createElement('div');
