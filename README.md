@@ -53,6 +53,8 @@ export default filterHandler;
 ## Features
 
 List of features ready and Todos for future development
+-Ready feature
+- View transition for animating the articles
 
 -Animate the menu items
 - Enable dark mode
